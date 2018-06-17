@@ -86,33 +86,6 @@ describe('Flipkart API accumulation', function () {
             .catch(done);
     });
 
-    //watches
-
-    it('getAllProduct watches', function (done) {
-        product = [];
-        var url = 'https://affiliate-api.flipkart.net/affiliate/api/pawanbcet.json';
-        return requestAPI(url)
-            .then(function (response) {
-                urls = response.apiGroups.affiliate.apiListings.watches.availableVariants['v1.1.0'].get;
-            })
-            .then(done)
-            .catch(done);
-    });
-
-    it('getAllProduct for watches', function (done) {
-        var response;
-        return requestAPI(urls)
-            .then(function (res) {
-                response = res;
-                return addItemToProduct(response.products, collectionName);
-            })
-            .then(function (res) {
-                return callNextURL(response.nextUrl);
-            })
-            .then(done)
-            .catch(done);
-    });
-
     //mens_footwear
 
     it('getAllProduct mens_footwear', function (done) {
@@ -154,87 +127,6 @@ describe('Flipkart API accumulation', function () {
     });
 
     it('getAllProduct for mens_clothing', function (done) {
-        var response;
-        return requestAPI(urls)
-            .then(function (res) {
-                response = res;
-                return addItemToProduct(response.products, collectionName);
-            })
-            .then(function (res) {
-                return callNextURL(response.nextUrl);
-            })
-            .then(done)
-            .catch(done);
-    });
-
-    //jewellery
-
-    it('getAllProduct jewellery', function (done) {
-        product = [];
-        var url = 'https://affiliate-api.flipkart.net/affiliate/api/pawanbcet.json';
-        return requestAPI(url)
-            .then(function (response) {
-                urls = response.apiGroups.affiliate.apiListings.jewellery.availableVariants['v1.1.0'].get;
-            })
-            .then(done)
-            .catch(done);
-    });
-
-    it('getAllProduct for jewellery', function (done) {
-        var response;
-        return requestAPI(urls)
-            .then(function (res) {
-                response = res;
-                return addItemToProduct(response.products, collectionName);
-            })
-            .then(function (res) {
-                return callNextURL(response.nextUrl);
-            })
-            .then(done)
-            .catch(done);
-    });
-
-    //grooming_beauty_wellness
-
-    it('getAllProduct grooming_beauty_wellness', function (done) {
-        product = [];
-        var url = 'https://affiliate-api.flipkart.net/affiliate/api/pawanbcet.json';
-        return requestAPI(url)
-            .then(function (response) {
-                urls = response.apiGroups.affiliate.apiListings.grooming_beauty_wellness.availableVariants['v1.1.0'].get;
-            })
-            .then(done)
-            .catch(done);
-    });
-
-    it('getAllProduct for grooming_beauty_wellness', function (done) {
-        var response;
-        return requestAPI(urls)
-            .then(function (res) {
-                response = res;
-                return addItemToProduct(response.products, collectionName);
-            })
-            .then(function (res) {
-                return callNextURL(response.nextUrl);
-            })
-            .then(done)
-            .catch(done);
-    });
-
-    //eyewear
-
-    it('getAllProduct eyewear', function (done) {
-        product = [];
-        var url = 'https://affiliate-api.flipkart.net/affiliate/api/pawanbcet.json';
-        return requestAPI(url)
-            .then(function (response) {
-                urls = response.apiGroups.affiliate.apiListings.eyewear.availableVariants['v1.1.0'].get;
-            })
-            .then(done)
-            .catch(done);
-    });
-
-    it('getAllProduct for eyewear', function (done) {
         var response;
         return requestAPI(urls)
             .then(function (res) {
