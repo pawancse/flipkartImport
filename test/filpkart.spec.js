@@ -1,5 +1,5 @@
 describe('Flipkart API accumulation', function () {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000000;
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 9000000;
   var request = require('request');
   var fs = require('fs');
   var urls;
