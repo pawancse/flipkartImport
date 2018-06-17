@@ -115,6 +115,7 @@ describe('Flipkart API accumulation', function () {
     var options = {
       baseUrl: urlString,
       uri: '',
+      proxy: 'http://127.0.0.1:8888',
       headers: {
         'Fk-Affiliate-Id': 'pawanbcet',
         'Fk-Affiliate-Token': '2b295c26a45a431ca310b0dcb32206f7'
