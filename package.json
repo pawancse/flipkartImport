@@ -1,0 +1,27 @@
+{
+  "name": "proxap",
+  "version": "1.0.0",
+  "description": "Data collector from different Ecommerce Websites",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karma-runner/gulp-karma"
+  },
+  "bugs": {
+    "url": "https://github.com/karma-runner/gulp-karma/issues"
+  },
+  "scripts": {
+    "test": "jasmine test/**.spec.js"
+  },
+  "author": "Pawan",
+  "license": "ISC",
+  "homepage": "https://github.com/karma-runner/gulp-karma",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "gulp": "^3.9.0",
+    "request": "^2.87.0"
+  },
+  "dependencies": {
+    "amazon-affiliate-api": "0.0.5",
+    "mongodb": "^2.2.33"
+  }
+}
