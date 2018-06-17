@@ -10,6 +10,7 @@
     "url": "https://github.com/karma-runner/gulp-karma/issues"
   },
   "scripts": {
+    "pretest": "npm install",
     "test": "jasmine test/**.spec.js"
   },
   "author": "Pawan",
